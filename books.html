@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Books · Mat Jafari</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Back to home">
+      <span class="dot"></span><span class="brandText">Mat Jafari</span>
+    </a>
+
+    <div class="topnav">
+      <a class="navlink" href="./" data-i18n="books.back">← Back</a>
+    </div>
+
+    <div class="langSwitch" role="group" aria-label="Language switch">
+      <button class="pill" data-lang="en" aria-pressed="true">EN</button>
+      <button class="pill" data-lang="fa" aria-pressed="false">FA</button>
+      <button class="pill" data-lang="ja" aria-pressed="false">JA</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="pageHead">
+      <h1 data-i18n="books.pageTitle">Books I read</h1>
+      <p class="muted" data-i18n="books.pageSubtitle">Short opinions, zero spoilers. Mostly.</p>
+    </div>
+
+    <div class="booksList" id="booksList"></div>
+
+    <footer class="footer">
+      <p class="muted">© <span id="year"></span> Mat Jafari</p>
+    </footer>
+  </main>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/books.js"></script>
+</body>
+</html>

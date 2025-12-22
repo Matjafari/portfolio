@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mat Jafari · Portfolio</title>
+  <meta name="description" content="Mat Jafari portfolio — marketing, photography, filmmaking, and information engineering." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Home">
+      <span class="dot"></span><span class="brandText">Mat Jafari</span>
+    </a>
+
+    <nav class="topnav">
+      <a class="navlink" href="#books" data-i18n="nav.books">Books</a>
+      <a class="navlink" href="#languages" data-i18n="nav.languages">Language</a>
+      <a class="navlink" href="#photo" data-i18n="nav.photo">Photography</a>
+      <a class="navlink" href="#film" data-i18n="nav.film">Filmmaking</a>
+      <a class="navlink" href="#education" data-i18n="nav.education">Education</a>
+      <a class="navlink" href="#work" data-i18n="nav.work">Work</a>
+      <a class="navlink" href="#social" data-i18n="nav.social">Social</a>
+    </nav>
+
+    <div class="langSwitch" role="group" aria-label="Language switch">
+      <button class="pill" data-lang="en" aria-pressed="true">EN</button>
+      <button class="pill" data-lang="fa" aria-pressed="false">FA</button>
+      <button class="pill" data-lang="ja" aria-pressed="false">JA</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="heroGrid">
+        <div class="heroLeft">
+          <div class="cutoutWrap" aria-label="Portrait">
+            <img class="cutout" src="assets/images/mat-cutout.svg" alt="Mat Jafari (placeholder)" />
+            <div class="stickers" aria-hidden="true">
+              <img class="sticker s1" src="assets/images/sticker-camera.svg" alt="" />
+              <img class="sticker s2" src="assets/images/sticker-laptop.svg" alt="" />
+              <img class="sticker s3" src="assets/images/sticker-tablet.svg" alt="" />
+              <img class="sticker s4" src="assets/images/sticker-osmo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="heroRight">
+          <h1 class="floatTitle" data-i18n="hero.title">Mat Jafari</h1>
+          <p class="sub" data-i18n="hero.subtitle">
+            Marketing manager · Photographer · Filmmaker · Information engineering student
+          </p>
+
+          <div class="quickChips">
+            <span class="chip" data-i18n="chips.lux">Luxury hospitality</span>
+            <span class="chip" data-i18n="chips.story">Storytelling</span>
+            <span class="chip" data-i18n="chips.design">Design systems</span>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn" href="#books" data-i18n="cta.explore">Explore</a>
+            <a class="btn ghost" href="books.html" data-i18n="cta.reading">Reading list</a>
+          </div>
+
+          <p class="tiny" data-i18n="hero.note">
+            Scroll: the stickers move in 3D space. Because humans love motion.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKS PREVIEW -->
+    <section class="section" id="books">
+      <div class="sectionHead">
+        <h2 data-i18n="books.title">Books</h2>
+        <p class="muted" data-i18n="books.subtitle">A preview of what I read and my short opinions.</p>
+      </div>
+
+      <div class="booksGrid">
+        <div class="booksImageCard">
+          <img src="assets/images/mat-books.svg" alt="Mat among books (placeholder)" />
+        </div>
+
+        <div class="booksPreviewCard">
+          <div class="previewHeader">
+            <span class="kicker" data-i18n="books.previewKicker">Preview</span>
+            <a class="link" href="books.html" data-i18n="books.openAll">Open full list →</a>
+          </div>
+
+          <ul class="previewList" id="booksPreviewList" aria-label="Books preview"></ul>
+
+          <div class="previewFooter">
+            <a class="btn small" href="books.html" data-i18n="books.openAll2">Go to Books</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGE ABILITIES -->
+    <section class="section" id="languages">
+      <div class="sectionHead">
+        <h2 data-i18n="lang.title">Language abilities</h2>
+        <p class="muted" data-i18n="lang.subtitle">Animated bars fill when you reach this section.</p>
+      </div>
+
+      <div class="langBars" id="langBars">
+        <div class="barRow" data-pct="100">
+          <div class="barMeta">
+            <span class="barName" data-i18n="lang.fa">Persian</span>
+            <span class="barNote" data-i18n="lang.faNote">Native</span>
+          </div>
+          <div class="barTrack"><div class="barFill"></div></div>
+        </div>
+
+        <div class="barRow" data-pct="90">
+          <div class="barMeta">
+            <span class="barName" data-i18n="lang.en">English</span>
+            <span class="barNote" data-i18n="lang.enNote">Native level</span>
+          </div>
+          <div class="barTrack"><div class="barFill"></div></div>
+        </div>
+
+        <div class="barRow" data-pct="80">
+          <div class="barMeta">
+            <span class="barName" data-i18n="lang.ja">Japanese</span>
+            <span class="barNote" data-i18n="lang.jaNote">N2</span>
+          </div>
+          <div class="barTrack"><div class="barFill"></div></div>
+        </div>
+
+        <div class="barRow" data-pct="10">
+          <div class="barMeta">
+            <span class="barName" data-i18n="lang.fr">French</span>
+            <span class="barNote" data-i18n="lang.frNote">A1</span>
+          </div>
+          <div class="barTrack"><div class="barFill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEHANCE PREVIEW -->
+    <section class="section" id="photo">
+      <div class="sectionHead">
+        <h2 data-i18n="photo.title">Photography works</h2>
+        <p class="muted" data-i18n="photo.subtitle">A small preview strip linked to Behance.</p>
+      </div>
+
+      <a class="behanceStrip" href="#" id="behanceLink" target="_blank" rel="noopener">
+        <div class="stripTitle">
+          <span class="kicker" data-i18n="photo.stripKicker">Behance preview</span>
+          <span class="stripHint" data-i18n="photo.stripHint">Click to open Behance →</span>
+        </div>
+        <div class="stripImgs" aria-hidden="true">
+          <img src="assets/images/behance-1.svg" alt="" />
+          <img src="assets/images/behance-2.svg" alt="" />
+          <img src="assets/images/behance-3.svg" alt="" />
+          <img src="assets/images/behance-4.svg" alt="" />
+          <img src="assets/images/behance-5.svg" alt="" />
+        </div>
+      </a>
+
+      <p class="tiny muted" data-i18n="photo.note">
+        Replace the link and thumbnails later. The universe will survive.
+      </p>
+    </section>
+
+    <!-- FILMMAKING -->
+    <section class="section" id="film">
+      <div class="sectionHead">
+        <h2 data-i18n="film.title">Filmmaking</h2>
+        <p class="muted" data-i18n="film.subtitle">Projects list + a YouTube playlist embed.</p>
+      </div>
+
+      <div class="twoCol">
+        <div class="card">
+          <h3 class="h3" data-i18n="film.projects">Projects</h3>
+          <ul class="bullets" id="filmList"></ul>
+        </div>
+
+        <div class="card">
+          <h3 class="h3" data-i18n="film.playlist">Playlist</h3>
+          <div class="ytWrap">
+            <!-- Replace the list ID in app.js -->
+            <iframe id="ytFrame" title="YouTube playlist"
+              src="https://www.youtube.com/embed/videoseries?list=PLrEnWoR732-D67iteOI6DPdJH1opjAuJt"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <p class="tiny muted" data-i18n="film.playlistNote">
+            Update the playlist ID whenever you’re ready to flex.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION TIMELINE -->
+    <section class="section" id="education">
+      <div class="sectionHead">
+        <h2 data-i18n="edu.title">Education</h2>
+        <p class="muted" data-i18n="edu.subtitle">A timeline that grows as you scroll.</p>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="line" aria-hidden="true"></div>
+
+        <div class="milestone">
+          <div class="dot"></div>
+          <div class="content">
+            <h3 class="h3" data-i18n="edu.m1">High school · Mathematics</h3>
+            <p class="muted" data-i18n="edu.m1s">Foundation in analytical thinking.</p>
+          </div>
+        </div>
+
+        <div class="milestone">
+          <div class="dot"></div>
+          <div class="content">
+            <h3 class="h3" data-i18n="edu.m2">Associate degree · Electronics</h3>
+            <p class="muted" data-i18n="edu.m2s">Circuit logic and practical engineering basics.</p>
+          </div>
+        </div>
+
+        <div class="milestone">
+          <div class="dot"></div>
+          <div class="content">
+            <h3 class="h3" data-i18n="edu.m3">BSc · Information Engineering</h3>
+            <p class="muted" data-i18n="edu.m3s">Building systems, data, and product thinking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="sectionHead">
+        <h2 data-i18n="work.title">Work experience</h2>
+        <p class="muted" data-i18n="work.subtitle">The part where I prove I do things.</p>
+      </div>
+
+      <div class="card">
+        <ul class="bullets" id="workList"></ul>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="section" id="interests">
+      <div class="sectionHead">
+        <h2 data-i18n="int.title">Interests</h2>
+        <p class="muted" data-i18n="int.subtitle">Iaido, chess, and other highly rational hobbies.</p>
+      </div>
+
+      <div class="twoCol">
+        <div class="card">
+          <h3 class="h3" data-i18n="int.iaido">Iaido</h3>
+          <img class="media" src="assets/images/iaido.svg" alt="Iaido photo placeholder" />
+          <p class="tiny muted" data-i18n="int.iaidoNote">Replace with your real photo later.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="h3" data-i18n="int.chess">Chess</h3>
+          <div class="chessBox">
+            <p class="muted" data-i18n="int.chessNote">
+              Live recent games preview depends on chess.com API and CORS. So for now: a clean placeholder.
+            </p>
+            <a class="btn small ghost" id="chessLink" href="#" target="_blank" rel="noopener" data-i18n="int.chessBtn">Open chess.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="section" id="social">
+      <div class="sectionHead">
+        <h2 data-i18n="social.title">Social</h2>
+        <p class="muted" data-i18n="social.subtitle">Previews + links, without turning your site into a billboard.</p>
+      </div>
+
+      <div class="threeCol">
+        <div class="card">
+          <h3 class="h3" data-i18n="social.ig">Instagram</h3>
+          <div class="igGrid" aria-hidden="true">
+            <img src="assets/images/ig-1.svg" alt="" />
+            <img src="assets/images/ig-2.svg" alt="" />
+            <img src="assets/images/ig-3.svg" alt="" />
+            <img src="assets/images/ig-4.svg" alt="" />
+            <img src="assets/images/ig-5.svg" alt="" />
+            <img src="assets/images/ig-6.svg" alt="" />
+          </div>
+          <a class="btn small" id="igLink" href="#" target="_blank" rel="noopener" data-i18n="social.openIg">Open Instagram</a>
+        </div>
+
+        <div class="card">
+          <h3 class="h3" data-i18n="social.tg">Telegram</h3>
+          <p class="muted" data-i18n="social.tgNote">Link your channel here.</p>
+          <a class="btn small" id="tgLink" href="#" target="_blank" rel="noopener" data-i18n="social.openTg">Open Telegram</a>
+        </div>
+
+        <div class="card">
+          <h3 class="h3" data-i18n="social.ap">Aparat</h3>
+          <p class="muted" data-i18n="social.apNote">Link your Aparat page here.</p>
+          <a class="btn small" id="apLink" href="#" target="_blank" rel="noopener" data-i18n="social.openAp">Open Aparat</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="muted">© <span id="year"></span> Mat Jafari</p>
+    </footer>
+  </main>
+
+  <!-- GSAP (scroll animation) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
